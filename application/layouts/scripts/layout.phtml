@@ -1,0 +1,64 @@
+<?php
+$controller = Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
+$album = "";
+$category = "";
+if ($controller == 'index') {
+    $album = "active";
+} elseif ($controller == 'categories') {
+    $category = "active";
+}
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Zend Framework Tutorial');
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headLink()->prependStylesheet($this->baseUrl() . '/css/bootstrap.min.css'); ?>
+    <?php echo $this->headLink()->prependStylesheet($this->baseUrl() . '/css/datatables.css'); ?>
+    <?php echo $this->headLink()->prependStylesheet($this->baseUrl() . '/css/screen.css'); ?>
+    <?php echo $this->headLink()->prependStylesheet($this->baseUrl() . '/css/select2.css'); ?>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CPanel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item <?= $album; ?>">
+                    <a class="nav-link" href="<?= $this->baseUrl() ?>/index">Albums </a>
+                </li>
+                <li class="nav-item <?= $category ?>">
+                    <a class="nav-link" href="<?= $this->baseUrl() ?>/categories">Categories </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+</div>
+<div id="content">
+    <?php echo $this->layout()->content; ?>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="<?php echo $this->baseUrl() . '/js/bootstrap.min.js'; ?>"></script>
+<script src="<?php echo $this->baseUrl() . '/js/jquery.form.js'; ?>"></script>
+<script src=<?php echo $this->baseUrl() . "/js/datatables.js"; ?>></script>
+<script src="<?php echo $this->baseUrl() . '/js/jquery.validate.js'; ?>"></script>
+<script src="<?php echo $this->baseUrl() . '/additional-methods.js'; ?>"></script>
+<script src="<?php echo $this->baseUrl() . '/js/select2.js'; ?>"></script>
+<?= $this->headScript(); ?>
+</body>
+</html>
