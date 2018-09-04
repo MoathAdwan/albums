@@ -1,7 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44af7be3-8bd3-48da-9882-a91c266b8133" name="Default Changelist" comment="" />
+    <list default="true" id="44af7be3-8bd3-48da-9882-a91c266b8133" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/120354.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/124377.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/136571.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/140018.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/144204.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/148632.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/152422.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/158750.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/161456.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/162457.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/165782.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/186329.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/187664.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/226092.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/230096.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/232004.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/240858.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/252290.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/256699.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/257857.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/271577.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/294221.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/294741.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/308725.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/313262.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/321193.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/331892.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/332652.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/334752.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/339980.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/355031.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/356068.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/356506.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/359000.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/364037.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/374061.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/388903.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/389051.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/389474.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/391903.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/393401.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/395560.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/402333.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/413073.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/425528.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/432592.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/455221.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/456176.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/465054.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/481531.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/495036.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/502683.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/507435.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/516672.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/535423.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/539418.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/541736.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/550457.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/554647.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/557074.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/561440.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/561554.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/564685.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/578293.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/582305.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/586312.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/593993.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/603363.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/616656.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/617199.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/622709.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/630382.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/632983.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/648591.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/649799.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/650135.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/656351.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/660291.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/668797.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/673699.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/677836.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/680837.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/684856.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/712781.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/716138.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/717569.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/721434.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/726063.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/741363.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/746267.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/748642.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/748673.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/753233.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/764985.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/768796.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/771570.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/786107.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/806211.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/817132.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/819553.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/820245.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/834796.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/854512.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/858363.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/858625.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/871149.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/889567.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/897108.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/909196.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/910200.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/918108.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/923743.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/924659.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/933888.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/939685.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/941319.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/948074.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/950151.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/951321.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/953620.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/958079.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/958576.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/968506.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/987895.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/993748.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mp3/998933.mp3" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +250,9 @@
       <replace>editCategoryForm</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -165,6 +296,7 @@
     <option name="width" value="1281" />
     <option name="height" value="704" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -257,16 +389,15 @@
       <workItem from="1535891835040" duration="606000" />
       <workItem from="1535895607127" duration="10141000" />
       <workItem from="1535961119787" duration="27929000" />
-      <workItem from="1536046728832" duration="5261000" />
+      <workItem from="1536046728832" duration="5883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43946000" />
+    <option name="totallyTimeSpent" value="44568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25338647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -280,7 +411,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
