@@ -426,7 +426,16 @@ $(document).ready(function () {
     function fetchAlbumData() {
 
         $('#AlbumTable').DataTable({
-            "ajax": "/index/albumsview",
+            "processing": true,
+            "serverSide": true,
+            "columnDefs": [ {
+                "targets": 3,
+                "orderable": false
+            } ],
+            "ajax":{
+                url : "/index/albumsview",
+                type : "post"
+            } ,
             "columns": [
 
                 {"data": "title"},

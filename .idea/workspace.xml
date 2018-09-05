@@ -3,132 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="44af7be3-8bd3-48da-9882-a91c266b8133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/120354.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/124377.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/136571.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/140018.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/144204.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/148632.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/152422.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/158750.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/161456.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/162457.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/165782.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/186329.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/187664.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/226092.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/230096.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/232004.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/240858.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/252290.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/256699.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/257857.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/271577.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/294221.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/294741.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/308725.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/313262.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/321193.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/331892.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/332652.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/334752.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/339980.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/355031.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/356068.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/356506.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/359000.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/364037.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/374061.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/388903.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/389051.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/389474.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/391903.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/393401.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/395560.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/402333.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/413073.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/425528.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/432592.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/455221.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/456176.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/465054.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/481531.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/495036.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/502683.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/507435.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/516672.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/535423.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/539418.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/541736.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/550457.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/554647.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/557074.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/561440.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/561554.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/564685.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/578293.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/582305.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/586312.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/593993.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/603363.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/616656.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/617199.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/622709.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/630382.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/632983.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/648591.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/649799.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/650135.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/656351.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/660291.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/668797.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/673699.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/677836.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/680837.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/684856.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/712781.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/716138.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/717569.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/721434.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/726063.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/741363.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/746267.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/748642.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/748673.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/753233.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/764985.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/768796.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/771570.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/786107.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/806211.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/817132.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/819553.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/820245.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/834796.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/854512.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/858363.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/858625.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/871149.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/889567.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/897108.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/909196.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/910200.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/918108.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/923743.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/924659.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/933888.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/939685.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/941319.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/948074.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/950151.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/951321.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/953620.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/958079.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/958576.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/968506.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/987895.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/993748.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mp3/998933.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/albums.sql" beforeDir="false" afterPath="$PROJECT_DIR$/albums.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/DbTable/ACview.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/DbTable/ACview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/DbTable/Albums.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/DbTable/Albums.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/DbTable/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/DbTable/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/DbTable/Music.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/DbTable/Music.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/albums.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/albums.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,38 +21,41 @@
     <session id="584797975">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="4" />
-          <entry key="php" value="7" />
+          <entry key="php" value="14" />
           <entry key="phtml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="35" />
+          <entry key="PHP" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2975" />
-          <entry key="php" value="780" />
+          <entry key="js" value="3026" />
+          <entry key="php" value="3012" />
           <entry key="phtml" value="205" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="2975" />
-          <entry key="PHP" value="985" />
+          <entry key="JavaScript" value="3026" />
+          <entry key="PHP" value="3217" />
+          <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -181,35 +65,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3450">
-              <caret line="230" column="33" selection-start-line="230" selection-start-column="33" selection-end-line="230" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/albums.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14340">
-              <caret line="956" column="5" selection-start-line="956" selection-start-column="5" selection-end-line="956" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/musictable.phtml">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <caret line="132" column="50" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Music.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Categories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DbTable/ACview.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Albums.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -233,6 +126,10 @@
       <find>validateEdit</find>
       <find>editForm</find>
       <find>CategoryModal</find>
+      <find>name</find>
+      <find>id</find>
+      <find>album_d</find>
+      <find>$recordsTotal</find>
     </findStrings>
     <replaceStrings>
       <replace>end_date</replace>
@@ -248,6 +145,8 @@
       <replace>validateAlbumAdd</replace>
       <replace>validateEditForm</replace>
       <replace>editCategoryForm</replace>
+      <replace>album_d</replace>
+      <replace>album_id</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -257,7 +156,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/views/scripts/index/editmusic.phtml" />
-        <option value="$PROJECT_DIR$/application/models/DbTable/Music.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/view.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/add.phtml" />
@@ -268,7 +166,6 @@
         <option value="$PROJECT_DIR$/application/views/scripts/index/editalbumrow.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/deletemusic.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/categories/editcategoryrow.phtml" />
-        <option value="$PROJECT_DIR$/public/js/albums.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/categories/deletecategory.phtml" />
         <option value="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/categories/categoriesview.phtml" />
@@ -277,6 +174,11 @@
         <option value="$PROJECT_DIR$/application/views/scripts/categories/addcategoryform.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/categories/index.phtml" />
         <option value="$PROJECT_DIR$/public/js/categories.js" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/Categories.php" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/Albums.php" />
+        <option value="$PROJECT_DIR$/public/js/albums.js" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/Music.php" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/ACview.php" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
       </list>
     </option>
@@ -320,38 +222,6 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
-              <item name="albums" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
-              <item name="albums" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
-              <item name="albums" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
-              <item name="albums" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
-              <item name="albums" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -362,6 +232,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -389,17 +260,26 @@
       <workItem from="1535891835040" duration="606000" />
       <workItem from="1535895607127" duration="10141000" />
       <workItem from="1535961119787" duration="27929000" />
-      <workItem from="1536046728832" duration="5883000" />
+      <workItem from="1536046728832" duration="23334000" />
+      <workItem from="1536132367754" duration="25708000" />
     </task>
+    <task id="LOCAL-00001" summary="new edit">
+      <created>1536052895072</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536052895072</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44568000" />
+    <option name="totallyTimeSpent" value="87727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25338647" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25737053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -426,26 +306,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new edit" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editmusicrow.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Music.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editmusicrow.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/delete.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editrow.phtml" />
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/deletealbum.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/deletealbum.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editalbumform.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -453,12 +322,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editalbumrow.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/deletemusic.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editalbumrow.phtml" />
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/deletemusic.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editmusicform.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -480,19 +345,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/editcategoryrow.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/deletecategory.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/editcategoryrow.phtml" />
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/deletecategory.phtml" />
     <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -500,12 +354,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/categoriesview.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/addcategoryrow.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/categoriesview.phtml" />
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/addcategoryrow.phtml" />
     <entry file="file://$PROJECT_DIR$/public/js/categories.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -534,13 +384,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/albumsview.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/albumsview.phtml" />
     <entry file="file://$PROJECT_DIR$/application/controllers/CategoriesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-486">
@@ -548,24 +392,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/musicview.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/musicview.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="735">
           <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/albums.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14340">
-          <caret line="956" column="5" selection-start-line="956" selection-start-column="5" selection-end-line="956" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -576,10 +407,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/AC.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/Zend/Db/Select.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="620" column="20" selection-start-line="620" selection-start-column="20" selection-end-line="620" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Albums.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/albums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="433" column="16" selection-start-line="433" selection-start-column="16" selection-end-line="433" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/ACview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Music.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3450">
-          <caret line="230" column="33" selection-start-line="230" selection-start-column="33" selection-end-line="230" selection-end-column="33" />
+        <state relative-caret-position="270">
+          <caret line="132" column="50" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
         </state>
       </provider>
     </entry>

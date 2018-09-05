@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
+-- version 4.5.4.1deb2ubuntu2.1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 31, 2018 at 04:12 AM
+-- Generation Time: Sep 05, 2018 at 06:49 PM
 -- Server version: 5.7.23-0ubuntu0.16.04.1
--- PHP Version: 7.0.31-1+ubuntu16.04.1+deb.sury.org+1
+-- PHP Version: 7.0.30-1+ubuntu16.04.1+deb.sury.org+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `albums` (
-  `id` int(11) NOT NULL,
+  `album_id` int(11) NOT NULL,
   `artist` varchar(100) NOT NULL,
   `title` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -36,9 +36,82 @@ CREATE TABLE `albums` (
 -- Dumping data for table `albums`
 --
 
-INSERT INTO `albums` (`id`, `artist`, `title`) VALUES
-(331, 'faded', 'alan walker'),
-(332, 'test', 'test');
+INSERT INTO `albums` (`album_id`, `artist`, `title`) VALUES
+(418, 'alan walker', 'faded'),
+(419, 'test', 'test'),
+(420, 'alan walker', 'faded'),
+(421, 'test', 'test'),
+(422, 'alan walker', 'faded'),
+(424, 'alan walker', 'faded'),
+(425, 'test', 'test'),
+(426, 'alan walker', 'faded'),
+(427, 'test', 'mee'),
+(428, 'czx', 'sss'),
+(429, 'esfd', 'aas'),
+(430, 'alan walker', 'faded'),
+(431, 'alan walker', 'faded'),
+(432, 'test', 'test'),
+(433, 'alan walker', 'faded'),
+(434, 'test', 'test'),
+(435, 'alan walker', 'faded'),
+(436, 'alan walker', 'faded'),
+(437, 'test', 'test'),
+(438, 'alan walker', 'faded'),
+(439, 'test', 'mee'),
+(440, 'czx', 'sss'),
+(441, 'esfd', 'aas'),
+(442, 'test', 'test'),
+(443, 'alan walker', 'faded'),
+(444, 'alan walker', 'faded'),
+(445, 'test', 'test'),
+(446, 'alan walker', 'faded'),
+(447, 'test', 'test'),
+(448, 'alan walker', 'faded'),
+(449, 'alan walker', 'faded'),
+(450, 'test', 'test'),
+(451, 'alan walker', 'faded'),
+(452, 'test', 'mee'),
+(453, 'czx', 'sss'),
+(454, 'esfd', 'aas'),
+(455, 'alan walker', 'faded'),
+(456, 'alan walker', 'faded'),
+(457, 'test', 'test'),
+(458, 'alan walker', 'faded'),
+(459, 'test', 'test'),
+(460, 'alan walker', 'faded'),
+(461, 'alan walker', 'faded'),
+(462, 'test', 'test'),
+(463, 'alan walker', 'faded'),
+(464, 'test', 'mee'),
+(465, 'czx', 'sss'),
+(466, 'esfd', 'aas'),
+(467, 'alan walker', 'faded'),
+(468, 'alan walker', 'faded'),
+(469, 'test', 'test'),
+(470, 'alan walker', 'faded'),
+(471, 'test', 'test'),
+(472, 'alan walker', 'faded'),
+(473, 'alan walker', 'faded'),
+(474, 'test', 'test'),
+(475, 'alan walker', 'faded'),
+(476, 'test', 'mee'),
+(477, 'czx', 'sss'),
+(478, 'esfd', 'aas'),
+(479, 'alan walker', 'faded'),
+(480, 'alan walker', 'faded'),
+(481, 'test', 'test'),
+(482, 'alan walker', 'faded'),
+(483, 'test', 'test'),
+(484, 'alan walker', 'faded'),
+(485, 'alan walker', 'faded'),
+(486, 'test', 'test'),
+(487, 'alan walker', 'faded'),
+(489, 'czx', 'sss'),
+(490, 'esfd', 'aas'),
+(491, 'test', 'test'),
+(492, 'test', 'sss'),
+(493, 'alan walker', 'aas'),
+(494, 'sss', 'sss');
 
 -- --------------------------------------------------------
 
@@ -46,9 +119,11 @@ INSERT INTO `albums` (`id`, `artist`, `title`) VALUES
 -- Stand-in structure for view `albums_categories`
 --
 CREATE TABLE `albums_categories` (
-`album_id` int(11)
+`title` varchar(100)
+,`artist` varchar(100)
+,`album_id` int(11)
 ,`category_id` int(11)
-,`name` varchar(100)
+,`cat_name` varchar(100)
 );
 
 -- --------------------------------------------------------
@@ -67,11 +142,10 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`) VALUES
-(7, 'songs'),
-(8, 'music'),
-(9, 'remix'),
-(10, 'modern'),
-(11, 'classic');
+(13, 'Songs'),
+(14, 'Music'),
+(16, 'Remix'),
+(17, 'tree');
 
 -- --------------------------------------------------------
 
@@ -89,12 +163,15 @@ CREATE TABLE `have_categories` (
 --
 
 INSERT INTO `have_categories` (`album_id`, `category_id`) VALUES
-(331, 7),
-(331, 8),
-(332, 7),
-(332, 8),
-(332, 9),
-(332, 10);
+(427, 16),
+(428, 13),
+(428, 14),
+(428, 16),
+(429, 16),
+(442, 14),
+(492, 13),
+(493, 13),
+(494, 17);
 
 -- --------------------------------------------------------
 
@@ -110,18 +187,11 @@ CREATE TABLE `music` (
   `price_jod` decimal(4,2) DEFAULT NULL,
   `price_dollar` decimal(4,2) DEFAULT NULL,
   `price_euro` decimal(4,2) DEFAULT NULL,
-  `discount` decimal(3,2) DEFAULT '0.00',
+  `discount` decimal(3,2) DEFAULT NULL,
   `start_date` date DEFAULT NULL,
   `end_date` date DEFAULT NULL,
   `album_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `music`
---
-
-INSERT INTO `music` (`id`, `duration`, `title`, `mp3`, `price_jod`, `price_dollar`, `price_euro`, `discount`, `start_date`, `end_date`, `album_id`) VALUES
-(9, '00:03:00', 'test', '252323.mp3', '50.50', '50.50', '50.50', '0.00', NULL, NULL, 331);
 
 -- --------------------------------------------------------
 
@@ -130,7 +200,7 @@ INSERT INTO `music` (`id`, `duration`, `title`, `mp3`, `price_jod`, `price_dolla
 --
 DROP TABLE IF EXISTS `albums_categories`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `albums_categories`  AS  select `t1`.`id` AS `album_id`,`t2`.`id` AS `category_id`,`t2`.`name` AS `name` from ((`albums` `t1` join `categories` `t2`) join `have_categories` `t3`) where ((`t1`.`id` = `t3`.`album_id`) and (`t2`.`id` = `t3`.`category_id`)) ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `albums_categories`  AS  select `t1`.`title` AS `title`,`t1`.`artist` AS `artist`,`t1`.`album_id` AS `album_id`,`t2`.`id` AS `category_id`,`t2`.`name` AS `cat_name` from ((`albums` `t1` join `categories` `t2`) join `have_categories` `t3`) where ((`t1`.`album_id` = `t3`.`album_id`) and (`t2`.`id` = `t3`.`category_id`)) ;
 
 --
 -- Indexes for dumped tables
@@ -140,7 +210,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 -- Indexes for table `albums`
 --
 ALTER TABLE `albums`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`album_id`);
 
 --
 -- Indexes for table `categories`
@@ -171,17 +241,17 @@ ALTER TABLE `music`
 -- AUTO_INCREMENT for table `albums`
 --
 ALTER TABLE `albums`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=333;
+  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=495;
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `music`
 --
 ALTER TABLE `music`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Constraints for dumped tables
 --
@@ -190,14 +260,14 @@ ALTER TABLE `music`
 -- Constraints for table `have_categories`
 --
 ALTER TABLE `have_categories`
-  ADD CONSTRAINT `have_categories_ibfk_1` FOREIGN KEY (`album_id`) REFERENCES `albums` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `have_categories_ibfk_1` FOREIGN KEY (`album_id`) REFERENCES `albums` (`album_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `have_categories_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `music`
 --
 ALTER TABLE `music`
-  ADD CONSTRAINT `music_ibfk_1` FOREIGN KEY (`album_id`) REFERENCES `albums` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `music_ibfk_1` FOREIGN KEY (`album_id`) REFERENCES `albums` (`album_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

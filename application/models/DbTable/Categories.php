@@ -42,5 +42,17 @@ class Application_Model_DbTable_Categories extends Zend_Db_Table_Abstract
         );
         $this->update($data, 'id = ' . (int)$id);
     }
+
+    public function get_num_rows($result_array)
+    {
+        return $num_rows = count($result_array);
+    }
+
+    public function get_search($keyword)
+    {
+        $query = $this->select()->from($this->_name, array('name'))
+            ->where("name LIKE '%$keyword%'");
+        return $this->fetchAll($query);
+    }
 }
 

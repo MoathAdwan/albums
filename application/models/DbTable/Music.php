@@ -25,7 +25,8 @@ class Application_Model_DbTable_Music extends Zend_Db_Table_Abstract
 
     public function addMusic($id, $title, $duration, $mp3, $jod, $dollar, $euro, $discount, $start_date, $end_data)
     {
-        $data = array('title' => $title,
+        $data = array(
+            'title' => $title,
             'duration' => $duration,
             'mp3' => $mp3,
             'album_id' => $id,

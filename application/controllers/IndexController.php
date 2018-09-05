@@ -104,26 +104,69 @@ class IndexController extends Zend_Controller_Action
         $this->_helper->layout->disableLayout();
         $this->_helper->viewRenderer->setNoRender(TRUE);
 
+        //the data came from datatable ajax
+        $params = $_REQUEST;
+
+        $columns = array(
+            // datatable column index  => database column name
+            0 => 'album_id',
+            1 => 'title',
+            2 => 'artist'
+        );
+
+        $order_column = $columns[$params['order'][0]['column']];
+        $dir = $params['order'][0]['dir'];
+        $start_page = $params['start'];
+        $page_rows_length = $params['length'];
+
+        $search_keyword = $params['search']['value'];
+
         $albums = new Application_Model_DbTable_Albums();
+        $albums_categories = new Application_Model_DbTable_ACview();
         $categories = new Application_Model_DbTable_ACview();
-        $albums_data = $albums->fetchAll();
+        $data_view = $albums->get_albums($search_keyword, $order_column, $dir, $start_page, $page_rows_length);
+        $recordsTotal = $albums->get_num_rows();
+        $recordsFiltered = $recordsTotal;
+        if (!empty($params['search']['value'])) {
+            $albums_array = $albums->get_albums($search_keyword, $order_column, $dir, $start_page, $page_rows_length)->toArray();
+            $categories_array = $albums_categories->get_categories($search_keyword, $order_column, $dir, $start_page, $page_rows_length)->toArray();
+            $data_view = array_unique(array_merge($albums_array, $categories_array), SORT_REGULAR);
+
+            $albums_array_search = $albums->get_albums_searched($search_keyword)->toArray();
+            $categories_array_search = $albums_categories->get_categories_searched($search_keyword)->toArray();
+            $rows_of_searches =array_unique(array_merge($albums_array_search, $categories_array_search), SORT_REGULAR);
+
+            $recordsFiltered = count($rows_of_searches);
+
+        }
         $rows = array();
-        $counter = 0;
-        foreach ($albums_data as $album) {
-            $album_id = $album->id;
-            $counter++;
+        foreach ($data_view as $album) {
+            $album_id = $album['album_id'];
             $category = $categories->getAC($album_id);
             $cat_string = "";
             //get the categories of the album as object in the json
             foreach ($category as $category_row) {
-                $cat_string .= $category_row->name . ", ";
+                $cat_string .= $category_row['cat_name'] . ", ";
             }
             $cat = rtrim($cat_string, ",");
             $new_cat_name = rtrim($cat, ", ");
-            array_push($rows, array('id' => $album_id, 'title' => $album->title, 'artist' => $album->artist, 'categories' => $new_cat_name));
+            array_push($rows,
+                array(
+                    'id' => $album_id,
+                    'title' => $album['title'],
+                    'artist' => $album['artist'],
+                    'categories' => $new_cat_name
+                )
+            );
 
         }
-        $data['data'] = $rows;
+
+        $data = array(
+            "draw" => intval($params['draw']),
+            "recordsTotal" => intval($recordsTotal),
+            "recordsFiltered" => intval($recordsFiltered),
+            "data" => $rows,
+        );
 
         echo json_encode($data);
 
