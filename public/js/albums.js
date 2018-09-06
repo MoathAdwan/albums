@@ -464,7 +464,16 @@ $(document).ready(function () {
     //use this to fetch music data and view it in music modal
     function fetchMusicData(id) {
         $('#MusicTable').DataTable({
-            "ajax": "/index/musicview/id/" + id,
+            "processing": true,
+            "serverSide": true,
+            "columnDefs": [ {
+                "targets": 7,
+                "orderable": false
+            } ],
+            "ajax": {
+                url:"/index/musicview/id/" + id,
+                type:"post",
+            },
             "columns": [
 
                 {"data": "title"},

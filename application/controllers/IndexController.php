@@ -124,16 +124,18 @@ class IndexController extends Zend_Controller_Action
         $albums = new Application_Model_DbTable_Albums();
         $albums_categories = new Application_Model_DbTable_ACview();
         $categories = new Application_Model_DbTable_ACview();
-        $data_view = $albums->get_albums($search_keyword, $order_column, $dir, $start_page, $page_rows_length);
+        $data_view = $albums->get_albums_limit($search_keyword, $order_column, $dir, $start_page, $page_rows_length);
         $recordsTotal = $albums->get_num_rows();
         $recordsFiltered = $recordsTotal;
         if (!empty($params['search']['value'])) {
-            $albums_array = $albums->get_albums($search_keyword, $order_column, $dir, $start_page, $page_rows_length)->toArray();
-            $categories_array = $albums_categories->get_categories($search_keyword, $order_column, $dir, $start_page, $page_rows_length)->toArray();
-            $data_view = array_unique(array_merge($albums_array, $categories_array), SORT_REGULAR);
+            $albums_array = $albums->get_albums($search_keyword, $order_column, $dir)->toArray();
+            $categories_array = $albums_categories->get_categories($search_keyword, $order_column, $dir)->toArray();
+            $data_view_merged = array_unique(array_merge($albums_array, $categories_array), SORT_REGULAR);
+            $data_view =array_slice($data_view_merged,$start_page,$page_rows_length);
 
             $albums_array_search = $albums->get_albums_searched($search_keyword)->toArray();
             $categories_array_search = $albums_categories->get_categories_searched($search_keyword)->toArray();
+
             $rows_of_searches =array_unique(array_merge($albums_array_search, $categories_array_search), SORT_REGULAR);
 
             $recordsFiltered = count($rows_of_searches);
@@ -284,14 +286,41 @@ class IndexController extends Zend_Controller_Action
 
     public function musicviewAction()
     {
+
+        $params = $_REQUEST;
+
+        $columns = array(
+            // datatable column index  => database column name
+            0 => 'id',
+        );
+
+        $order_column = $columns[$params['order'][0]['column']];
+        $dir = $params['order'][0]['dir'];
+        $start_page = $params['start'];
+        $page_rows_length = $params['length'];
+
+        $search_keyword = $params['search']['value'];
+
         $this->_helper->layout->disableLayout();
         $this->_helper->viewRenderer->setNoRender(TRUE);
 
         $id = $this->_getParam('id', 0);
         $music = new Application_Model_DbTable_Music();
-        $data = $music->getAllMusic($id);
+        $rows = $music->get_all_music($id,$search_keyword,$order_column,$dir,$start_page,$page_rows_length)->toArray();
+        $recordsTotal = $music->get_num_rows();
+        $recordsFiltered = $recordsTotal;
+        if (!empty($params['search']['value'])) {
+            $recordsFiltered =  $music->get_music_searched($search_keyword);
+        }
 
-        echo json_encode(array('data' => $data->toArray()));
+        $result = array(
+            "draw" => intval($params['draw']),
+            "recordsTotal" => intval($recordsTotal),
+            "recordsFiltered" => intval($recordsFiltered),
+            "data" => $rows,
+        );
+
+        echo json_encode($result);
 
     }
 

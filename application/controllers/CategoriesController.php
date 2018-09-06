@@ -69,11 +69,41 @@ class CategoriesController extends Zend_Controller_Action
 
     public function categoriesviewAction()
     {
+
         $this->_helper->layout->disableLayout();
         $this->_helper->viewRenderer->setNoRender(TRUE);
+
+
+        $params = $_REQUEST;
+
+        $columns = array(
+            // datatable column index  => database column name
+            0 => 'id',
+        );
+
+        $order_column = $columns[$params['order'][0]['column']];
+        $dir = $params['order'][0]['dir'];
+        $start_page = $params['start'];
+        $page_rows_length = $params['length'];
+
+        $search_keyword = $params['search']['value'];
         $categories = new Application_Model_DbTable_Categories();
-        $fetch_categories = $categories->fetchAll();
-        echo json_encode(array('data' => $fetch_categories->toArray()));
+        $rows = $categories->get_categories($search_keyword,$order_column,$dir,$start_page,$page_rows_length)->toArray();
+
+        $recordsTotal = $categories->get_num_rows();
+        $recordsFiltered = $recordsTotal;
+        if (!empty($params['search']['value'])) {
+            $recordsFiltered = $categories->get_categories_searched($search_keyword);
+        }
+
+        $result = array(
+            "draw" => intval($params['draw']),
+            "recordsTotal" => intval($recordsTotal),
+            "recordsFiltered" => intval($recordsFiltered),
+            "data" => $rows,
+        );
+
+        echo json_encode($result);
 
     }
 

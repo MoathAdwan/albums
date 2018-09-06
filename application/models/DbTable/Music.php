@@ -5,12 +5,12 @@ class Application_Model_DbTable_Music extends Zend_Db_Table_Abstract
 
     protected $_name = 'music';
 
-    public function getAllMusic($id)
-    {
-        $id = (int)$id;
-        return $this->fetchAll('album_id = ' . $id);
+    /* public function getAllMusic($id)
+     {
+         $id = (int)$id;
+         return $this->fetchAll('album_id = ' . $id);
 
-    }
+     }*/
 
     public function getMusic($id)
     {
@@ -55,7 +55,7 @@ class Application_Model_DbTable_Music extends Zend_Db_Table_Abstract
         $this->update($data, 'id = ' . (int)$id);
     }
 
-    public function updateMusic2($id, $title, $duration, $jod, $dollar, $euro ,$discount, $start_date, $end_data)
+    public function updateMusic2($id, $title, $duration, $jod, $dollar, $euro, $discount, $start_date, $end_data)
     {
         $data = array(
             'title' => $title,
@@ -82,6 +82,43 @@ class Application_Model_DbTable_Music extends Zend_Db_Table_Abstract
         }
         return
             $row->toArray();
+    }
+
+    public function get_num_rows()
+    {
+        $select = $this->select();
+        $select->from($this, array('count(*) as amount'));
+        $rows = $this->fetchAll($select);
+
+        return ($rows[0]->amount);
+    }
+
+    public function get_all_music($id, $keyword, $order_column, $dir, $start, $length)
+    {
+        $query = $this
+            ->select()
+            ->from($this->_name, array('id','duration','title','mp3','discount','price_jod',
+                'price_dollar','price_euro','start_date','end_date','album_id'))
+            ->order($order_column . ' ' . $dir)
+            ->where("title LIKE '%$keyword%' OR duration LIKE '%$keyword%' OR discount LIKE '%$keyword%'
+            OR price_jod LIKE '%$keyword%' OR price_dollar LIKE '%$keyword%' OR price_euro LIKE '%$keyword%' OR
+            start_date LIKE '%$keyword%' OR end_date LIKE '%$keyword%' And id = '$id'")
+            ->limit($length, $start);
+        return $this->fetchAll($query);
+    }
+
+
+    public function get_music_searched($keyword)
+    {
+        $query =
+            $this->select()
+                ->from($this, array('id'))
+                ->where("title LIKE '%$keyword%' OR duration LIKE '%$keyword%' OR discount LIKE '%$keyword%'
+            OR price_jod LIKE '%$keyword%' OR price_dollar LIKE '%$keyword%' OR price_euro LIKE '%$keyword%' OR
+            start_date LIKE '%$keyword%' OR end_date LIKE '%$keyword%'");
+        $data = $this->fetchAll($query);
+
+        return count($data);
     }
 
 }

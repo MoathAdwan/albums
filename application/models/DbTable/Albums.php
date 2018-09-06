@@ -55,7 +55,7 @@ class Application_Model_DbTable_Albums extends Zend_Db_Table_Abstract
     }
 
 
-    //TODO: Please send the code by email to mohammad.salem@codeobia.com, thank you!
+
     public function get_num_rows()
     {
         $select = $this->select();
@@ -65,14 +65,24 @@ class Application_Model_DbTable_Albums extends Zend_Db_Table_Abstract
         return($rows[0]->amount);
     }
 
-    public function get_albums($keyword,$oder_column, $dir, $start, $length)
+    public function get_albums_limit($keyword,$order_column, $dir, $start, $length)
+    {
+        $query = $this
+            ->select()
+            ->from($this->_name, array('album_id', 'title', 'artist'))
+            ->order($order_column .' '. $dir)
+            ->where("title LIKE '%$keyword%' OR artist LIKE '%$keyword%'")
+            ->limit($length, $start);
+        return $this->fetchAll($query);
+    }
+
+    public function get_albums($keyword,$oder_column, $dir)
     {
         $query = $this
             ->select()
             ->from($this->_name, array('album_id', 'title', 'artist'))
             ->order($oder_column .' '. $dir)
-            ->where("title LIKE '%$keyword%' OR artist LIKE '%$keyword%'")
-            ->limit($length, $start);
+            ->where("title LIKE '%$keyword%' OR artist LIKE '%$keyword%'");
         return $this->fetchAll($query);
     }
 
@@ -80,7 +90,7 @@ class Application_Model_DbTable_Albums extends Zend_Db_Table_Abstract
     {
         $query =
             $this->select()
-                ->from($this->_name, array('album_id', 'title', 'artist'))
+                ->from($this, array('album_id'))
                 ->where("title LIKE '%$keyword%' OR artist LIKE '%$keyword%'");
         $data = $this->fetchAll($query);
 

@@ -7,8 +7,7 @@ class Application_Model_DbTable_Categories extends Zend_Db_Table_Abstract
 
     public function getCategory($id)
     {
-        $id = (int)
-        $id;
+        $id = (int)$id;
         $row = $this->fetchRow('id = ' . $id);
         if (!$row) {
             throw new Exception("Could not find row $id");
@@ -43,16 +42,36 @@ class Application_Model_DbTable_Categories extends Zend_Db_Table_Abstract
         $this->update($data, 'id = ' . (int)$id);
     }
 
-    public function get_num_rows($result_array)
+    public function get_num_rows()
     {
-        return $num_rows = count($result_array);
+        $select = $this->select();
+        $select->from($this, array('count(*) as amount'));
+        $rows = $this->fetchAll($select);
+
+        return($rows[0]->amount);
     }
 
-    public function get_search($keyword)
+    public function get_categories($keyword,$order_column, $dir, $start, $length)
     {
-        $query = $this->select()->from($this->_name, array('name'))
-            ->where("name LIKE '%$keyword%'");
+        $query = $this
+            ->select()
+            ->from($this->_name, array('id', 'name'))
+            ->order($order_column .' '. $dir)
+            ->where("name LIKE '%$keyword%' ")
+            ->limit($length, $start);
         return $this->fetchAll($query);
+    }
+
+
+    public function get_categories_searched($keyword)
+    {
+        $query =
+            $this->select()
+                ->from($this, array('id'))
+                ->where("name LIKE '%$keyword%' ");
+        $data = $this->fetchAll($query);
+
+        return count($data);
     }
 }
 

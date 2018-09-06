@@ -7,8 +7,7 @@ class Application_Model_DbTable_AC extends Zend_Db_Table_Abstract
 
     public function getAC($id)
     {
-        $id = (int)
-        $id;
+        $id = (int)$id;
         return $this->fetchAll('album_id = ' . $id);
 
     }
@@ -31,13 +30,6 @@ class Application_Model_DbTable_AC extends Zend_Db_Table_Abstract
         $this->delete('album_id =' . (int)$album_id);
     }
 
-    public function updateAC($id, $name)
-    {
-        $data = array(
-            'name' => $name,
 
-        );
-        $this->update($data, 'id = ' . (int)$id);
-    }
 }
 

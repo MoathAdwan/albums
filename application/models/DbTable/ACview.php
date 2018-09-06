@@ -14,14 +14,13 @@ class Application_Model_DbTable_ACview extends Zend_Db_Table_Abstract
     }
 
 
-    public function get_categories($keyword, $oder_column, $dir, $start, $length)
+    public function get_categories($keyword, $oder_column, $dir)
     {
         $query = $this
                 ->select()
                 ->from($this->_name, array('album_id', 'title', 'artist'))
                 ->order($oder_column . ' ' . $dir)
-                ->where("cat_name LIKE '%$keyword%'")
-                ->limit($length, $start);
+                ->where("cat_name LIKE '%$keyword%'");
         $data = $this->fetchAll($query);
 
         return $data;
@@ -31,7 +30,7 @@ class Application_Model_DbTable_ACview extends Zend_Db_Table_Abstract
     {
         $query = $this
                 ->select()
-                ->from($this->_name, array('album_id', 'title', 'artist'))
+                ->from($this->_name, array('album_id'))
                 ->where("cat_name LIKE '%$keyword%'");
         $data = $this->fetchAll($query);
 

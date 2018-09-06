@@ -150,7 +150,16 @@ $(document).ready(function () {
 
     function fetchData() {
         $('#CategoriesTable').DataTable({
-            "ajax": "/categories/categoriesview",
+            "processing": true,
+            "serverSide": true,
+            "columnDefs": [ {
+                "targets": 1,
+                "orderable": false
+            } ],
+            "ajax": {
+                url:"/categories/categoriesview",
+                type:"post"
+            },
             "columns": [
 
                 {"data": "name"},
