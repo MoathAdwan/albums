@@ -87,10 +87,7 @@ class IndexController extends Zend_Controller_Action
             $albums->updateAlbum($album_id, $artist, $title);
 
             $AC = new Application_Model_DbTable_AC();
-            if ($cat_id != null) {
-                $AC->deleteAC($album_id);
-            }
-
+            $AC->deleteAC($album_id);
 
             foreach ($cat_id as $val) {
                 $AC->addAC($album_id, $val);
@@ -109,9 +106,8 @@ class IndexController extends Zend_Controller_Action
 
         $columns = array(
             // datatable column index  => database column name
-            0 => 'album_id',
-            1 => 'title',
-            2 => 'artist'
+            0 => 'title',
+            1 => 'artist',
         );
 
         $order_column = $columns[$params['order'][0]['column']];
@@ -201,7 +197,7 @@ class IndexController extends Zend_Controller_Action
             $jod = $this->getRequest()->getPost('jod');
             $dollar = $this->getRequest()->getPost('dollar');
             $euro = $this->getRequest()->getPost('euro');
-            $discount = $this->getRequest()->getPost('discount');
+            $discount = $this->getRequest()->getPost('discount')/100;
             $start_date = $this->getRequest()->getPost('start_date');
             $end_date = $this->getRequest()->getPost('end_date');
 
@@ -255,7 +251,7 @@ class IndexController extends Zend_Controller_Action
             $jod = $this->getRequest()->getPost('jod');
             $dollar = $this->getRequest()->getPost('dollar');
             $euro = $this->getRequest()->getPost('euro');
-            $discount = $this->getRequest()->getPost('discount');
+            $discount = $this->getRequest()->getPost('discount')/100;
             $start_date = $this->getRequest()->getPost('start_date');
             $end_date = $this->getRequest()->getPost('end_date');
 
@@ -293,7 +289,13 @@ class IndexController extends Zend_Controller_Action
 
         $columns = array(
             // datatable column index  => database column name
-            0 => 'id',
+            0 => 'title',
+            1 => 'duration',
+            2 => 'discount',
+            4 => 'price_jod',
+            5 => 'price_dollar',
+            6 => 'price_euro',
+
         );
 
         $order_column = $columns[$params['order'][0]['column']];

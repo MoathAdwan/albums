@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44af7be3-8bd3-48da-9882-a91c266b8133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/scripts/index/addmusicform.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/scripts/index/addmusicform.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/scripts/index/editmusicform.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/scripts/index/editmusicform.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/albums.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/albums.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,29 +29,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="9" />
-          <entry key="php" value="29" />
-          <entry key="phtml" value="35" />
+          <entry key="js" value="10" />
+          <entry key="php" value="31" />
+          <entry key="phtml" value="50" />
+          <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="64" />
+          <entry key="JavaScript" value="10" />
+          <entry key="PHP" value="81" />
+          <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="3344" />
-          <entry key="php" value="4422" />
-          <entry key="phtml" value="211" />
+          <entry key="js" value="3636" />
+          <entry key="php" value="4542" />
+          <entry key="phtml" value="333" />
           <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="3344" />
-          <entry key="PHP" value="4633" />
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="3635" />
+          <entry key="PHP" value="4875" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -56,65 +62,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="310" column="48" selection-start-line="310" selection-start-column="48" selection-end-line="310" selection-end-column="48" />
+            <state relative-caret-position="259">
+              <caret line="253" column="69" selection-start-line="253" selection-start-column="69" selection-end-line="253" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Music.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/albums.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="460" column="30" selection-start-line="460" selection-start-column="30" selection-end-line="460" selection-end-column="30" />
+            <state relative-caret-position="267">
+              <caret line="919" column="32" selection-start-line="919" selection-start-column="32" selection-end-line="919" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/categories.js">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addalbumform.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="184" column="33" selection-start-line="184" selection-start-column="33" selection-end-line="184" selection-end-column="33" />
+            <state relative-caret-position="165">
+              <caret line="11" column="96" selection-start-line="11" selection-start-column="86" selection-end-line="11" selection-end-column="96" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/musictable.phtml">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addmusicform.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="390">
+              <caret line="47" column="10" selection-start-line="39" selection-start-column="4" selection-end-line="47" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Albums.php">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editmusicform.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="61" column="54" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Categories.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="71" column="40" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+            <state relative-caret-position="248">
+              <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -148,8 +136,9 @@
       <find>musicvi</find>
       <find>view-album-btn</find>
       <find>$(document).on('click', '.view-album-btn', function () {</find>
-      <find>musictable</find>
       <find>reload</find>
+      <find>price_format: true</find>
+      <find>musictable</find>
     </findStrings>
     <replaceStrings>
       <replace>end_date</replace>
@@ -168,6 +157,7 @@
       <replace>album_d</replace>
       <replace>album_id</replace>
       <replace>album_tags</replace>
+      <replace>price_format: true,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -199,10 +189,13 @@
         <option value="$PROJECT_DIR$/application/models/DbTable/Categories.php" />
         <option value="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/musictable.phtml" />
-        <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/models/DbTable/Music.php" />
         <option value="$PROJECT_DIR$/public/js/categories.js" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/addalbumform.phtml" />
         <option value="$PROJECT_DIR$/public/js/albums.js" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/addmusicform.phtml" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/editmusicform.phtml" />
+        <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
       </list>
     </option>
   </component>
@@ -287,6 +280,22 @@
             <path>
               <item name="albums" type="b2602c69:ProjectViewProjectNode" />
               <item name="albums" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="albums" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="albums" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,6 +303,12 @@
               <item name="albums" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="albums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="albums" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="mp3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -336,7 +351,7 @@
       <workItem from="1536046728832" duration="23334000" />
       <workItem from="1536132367754" duration="26059000" />
       <workItem from="1536218877550" duration="22462000" />
-      <workItem from="1536482878515" duration="9947000" />
+      <workItem from="1536482878515" duration="20712000" />
     </task>
     <task id="LOCAL-00001" summary="new edit">
       <created>1536052895072</created>
@@ -373,11 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536493765002</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new edit">
+      <created>1536496368570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536496368570</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120487000" />
+    <option name="totallyTimeSpent" value="131252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -422,17 +444,68 @@
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/deletealbum.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editalbumrow.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/deletemusic.phtml" />
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addalbumform.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/editcategoryrow.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/deletecategory.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/categoriesview.phtml" />
     <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/addcategoryrow.phtml" />
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/albumsview.phtml" />
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/musicview.phtml" />
+    <entry file="file://$PROJECT_DIR$/library/Zend/Db/Select.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="620" column="20" selection-start-line="620" selection-start-column="20" selection-end-line="620" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2580">
+          <caret line="172" column="30" selection-start-line="172" selection-start-column="30" selection-end-line="172" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/AC.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/ACview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="71" column="40" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Albums.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Music.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-788">
+          <caret line="42" column="60" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/addcategoryform.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -449,45 +522,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/categories/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="37">
           <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/albumsview.phtml" />
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/musicview.phtml" />
-    <entry file="file://$PROJECT_DIR$/library/Zend/Db/Select.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="620" column="20" selection-start-line="620" selection-start-column="20" selection-end-line="620" selection-end-column="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/error/error.phtml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editmusicform.phtml">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/musictable.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/AC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addmusicform.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="10" selection-end-column="22" />
+        <state relative-caret-position="210">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state relative-caret-position="277">
           <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/albums.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addalbumform.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="96" selection-start-line="11" selection-start-column="86" selection-end-line="11" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/albums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="919" column="32" selection-start-line="919" selection-start-column="32" selection-end-line="919" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -498,73 +575,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/ACview.php">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addmusicform.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="390">
+          <caret line="47" column="10" selection-start-line="39" selection-start-column="4" selection-end-line="47" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Categories.php">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/editmusicform.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="71" column="40" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/CategoriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Music.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+        <state relative-caret-position="248">
+          <caret line="41" column="116" selection-start-line="41" selection-start-column="116" selection-end-line="41" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="310" column="48" selection-start-line="310" selection-start-column="48" selection-end-line="310" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/categories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="184" column="33" selection-start-line="184" selection-start-column="33" selection-end-line="184" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Albums.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="61" column="54" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/musictable.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/albums.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="460" column="30" selection-start-line="460" selection-start-column="30" selection-end-line="460" selection-end-column="30" />
+        <state relative-caret-position="259">
+          <caret line="253" column="69" selection-start-line="253" selection-start-column="69" selection-end-line="253" selection-end-column="69" />
         </state>
       </provider>
     </entry>

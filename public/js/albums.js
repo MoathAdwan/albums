@@ -226,59 +226,6 @@ $(document).ready(function () {
 
     });
 
-    function validateAlbumAdd() {
-        $("#addAlbumForm").validate({
-            rules: {
-                title: {
-                    required: true,
-                    minlength: 3
-                },
-                artist: {
-                    required: true,
-                    minlength: 3
-                },
-
-                messages: {
-                    title: {
-                        required: "Please enter the album title",
-                        minlength: "Your album title must consist of at least 2 characters"
-                    },
-                    artist: {
-                        required: "Please enter the artist name",
-                        minlength: "Your album artist must consist of at least 2 characters"
-                    },
-                }
-            }
-        });
-
-    }
-
-    function validateAlbumEdit() {
-        $("#editAlbumForm").validate({
-            rules: {
-                title: {
-                    required: true,
-                    minlength: 3
-                },
-                artist: {
-                    required: true,
-                    minlength: 3
-                },
-
-                messages: {
-                    title: {
-                        required: "Please enter the album title",
-                        minlength: "Your album title must consist of at least 2 characters"
-                    },
-                    artist: {
-                        required: "Please enter the artist name",
-                        minlength: "Your album artist must consist of at least 2 characters"
-                    },
-                }
-            }
-        });
-
-    }
 
     $.validator.addMethod("time24", function (value, element) {
         if (!/^\d{2}:\d{2}:\d{2}$/.test(value)) return false;
@@ -288,18 +235,26 @@ $(document).ready(function () {
     }, "Invalid time format. hh:mm:ss");
 
     $.validator.addMethod("price_format", function (value, element) {
-        if (!/^\d{2}\.\d{2}$/.test(value)) return this.optional(element) || false;
-        var parts = value.split('.');
-        if (parts[0] > 99 || parts[1] > 99) return this.optional(element) || false;
+        /*
+         if (!/^\d{2}\.\d{1}$/.test(value)) return this.optional(element) || false;
+            var parts = value.split('.');
+            if (parts[0] > 99 || parts[1] > 99) return this.optional(element) || false;
+         */
+        if (value > 99) {
+            return this.optional(element) || false;
+        }
+
         return this.optional(element) || true;
-    }, "Invalid price format. --.--");
+    }, "the max value of any type of price below should  be 99");
 
     $.validator.addMethod("discount_format", function (value, element) {
-        if (!/^\d{1}\.\d{2}$/.test(value)) return this.optional(element) || false;
+        /*if (!/^\d{1}\.\d{2}$/.test(value)) return this.optional(element) || false;
         var parts = value.split('.');
         if (parts[0] > 0 || parts[1] > 99) return this.optional(element) || false;
+        return this.optional(element) || true;*/
+        if (value > 100) return this.optional(element) || false;
         return this.optional(element) || true;
-    }, "Invalid discount format. -.--");
+    }, "the max value of discount should be 100. ");
 
     $.validator.addMethod("date_format", function (value, element) {
         if (value.match(/^\d{4}-\d{2}-\d{2}$/)) {
@@ -398,8 +353,6 @@ $(document).ready(function () {
     }, "End date cant be happen with start date or before");
 
 
-
-
     // functions
     ///////////////////////////////////////////////////
 
@@ -428,26 +381,31 @@ $(document).ready(function () {
         $('#AlbumTable').DataTable({
             "processing": true,
             "serverSide": true,
-            "columnDefs": [ {
-                "targets": 3,
+            "columnDefs": [{
+                "targets": [2, 3],
                 "orderable": false
-            } ],
-            "ajax":{
-                url : "/index/albumsview",
-                type : "post"
-            } ,
+            }],
+            "ajax": {
+                url: "/index/albumsview",
+                type: "post"
+            },
+            'language': {
+                "loadingRecords": "&nbsp;",
+                "processing": "Loading..."
+            },
             "columns": [
 
                 {"data": "title"},
                 {"data": "artist"},
-                {"data": "categories",
+                {
+                    "data": "categories",
                     render: function (data, type, row) {
                         var categories = data.split(',');
                         var album_tags = "<h5>";
-                        for (var count=0;count < categories.length;count++ ){
-                            album_tags+=' '+'<span class="badge badge-secondary">'+categories[count]+'</span>';
+                        for (var count = 0; count < categories.length; count++) {
+                            album_tags += ' ' + '<span class="badge badge-secondary">' + categories[count] + '</span>';
                         }
-                        return album_tags+"</h5>";
+                        return album_tags + "</h5>";
                     }
                 },
                 {
@@ -475,19 +433,20 @@ $(document).ready(function () {
         $('#MusicTable').DataTable({
             "processing": true,
             "serverSide": true,
-            "columnDefs": [ {
-                "targets": 7,
+            "columnDefs": [{
+
+                "targets": [3, 7],
                 "orderable": false
-            } ],
+            }],
             "ajax": {
-                url:"/index/musicview/id/" + id,
-                type:"post",
+                url: "/index/musicview/id/" + id,
+                type: "post",
             },
             "columns": [
 
                 {"data": "title"},
                 {"data": "duration"},
-                // to show mp3 in music modal
+                // to view mp3 in music modal
                 /*  {
 
                       "data": "mp3",
@@ -671,11 +630,66 @@ $(document).ready(function () {
 
     //use this to reload specific table
     function reloadTable(table) {
-        table.ajax.reload( null, false );
+        table.ajax.reload(null, false);
     }
 
 
     //validate
+
+    function validateAlbumAdd() {
+        $("#addAlbumForm").validate({
+            rules: {
+                title: {
+                    required: true,
+                    minlength: 3
+                },
+                artist: {
+                    required: true,
+                    minlength: 3
+                },
+
+                messages: {
+                    title: {
+                        required: "Please enter the album title",
+                        minlength: "Your album title must consist of at least 2 characters"
+                    },
+                    artist: {
+                        required: "Please enter the artist name",
+                        minlength: "Your album artist must consist of at least 2 characters"
+                    },
+
+                }
+            }
+        });
+
+    }
+
+    function validateAlbumEdit() {
+        $("#editAlbumForm").validate({
+            rules: {
+                title: {
+                    required: true,
+                    minlength: 3
+                },
+                artist: {
+                    required: true,
+                    minlength: 3
+                },
+
+                messages: {
+                    title: {
+                        required: "Please enter the album title",
+                        minlength: "Your album title must consist of at least 2 characters"
+                    },
+                    artist: {
+                        required: "Please enter the artist name",
+                        minlength: "Your album artist must consist of at least 2 characters"
+                    },
+                }
+            }
+        });
+
+    }
 
     function validateMusicAdd() {
         $("#addMusicForm").validate({
@@ -715,7 +729,8 @@ $(document).ready(function () {
                         }
 
                     },
-                    price_format: true
+                    price_format: true,
+                    number: true,
                 },
                 dollar: {
                     required: function () {
@@ -728,7 +743,8 @@ $(document).ready(function () {
                         }
 
                     },
-                    price_format: true
+                    price_format: true,
+                    number: true
                 },
                 euro: {
                     required: function () {
@@ -744,7 +760,8 @@ $(document).ready(function () {
                         }
 
                     },
-                    price_format: true
+                    price_format: true,
+                    number: true
                 },
 
                 discount: {
@@ -761,7 +778,7 @@ $(document).ready(function () {
                         }
 
                     },
-
+                    number: true,
                     discount_format: true
                 },
 
@@ -867,7 +884,9 @@ $(document).ready(function () {
                             return false
                         }
 
-                    }
+                    },
+                    price_format: true,
+                    number: true
                 },
                 dollar: {
                     required: function () {
@@ -879,7 +898,9 @@ $(document).ready(function () {
                             return false
                         }
 
-                    }
+                    },
+                    price_format: true,
+                    number: true
                 },
                 euro: {
                     required: function () {
@@ -894,7 +915,9 @@ $(document).ready(function () {
 
                         }
 
-                    }
+                    },
+                    price_format: true,
+                    number: true
                 },
 
                 discount: {
@@ -912,7 +935,8 @@ $(document).ready(function () {
 
                     },
 
-                    discount_format: true
+                    discount_format: true,
+                    number: true,
                 },
 
                 start_date: {

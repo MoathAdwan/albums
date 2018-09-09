@@ -11,19 +11,40 @@
     <span id="price_error"></span>
     <div class="form-group">
         <label for="jod">JOD</label>
-        <input name="jod" type="text" class="form-control" id="jod">
+        <div class="input-group mb-3">
+            <input name="jod" type="text" class="form-control" id="jod">
+            <div class="input-group-append">
+                <span class="input-group-text" id="percentage">.00</span>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label for="dollar">Dollar</label>
-        <input name="dollar" type="text" class="form-control" id="dollar">
+        <div class="input-group mb-3">
+            <input name="dollar" type="text" class="form-control" id="dollar">
+            <div class="input-group-append">
+                <span class="input-group-text" id="percentage">.00</span>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label for="euro">Euro</label>
-        <input name="euro" type="text" class="form-control" id="euro">
+        <div class="input-group mb-3">
+            <input name="euro" type="text" class="form-control" id="euro">
+            <div class="input-group-append">
+                <span class="input-group-text" id="percentage">.00</span>
+            </div>
+        </div>
+
     </div>
     <div class="form-group">
         <label for="discount">Discount</label>
-        <input name="discount" type="text" class="form-control" id="discount">
+        <div class="input-group mb-3">
+            <input name="discount" type="text" class="form-control" id="discount" aria-describedby="percentage">
+            <div class="input-group-append">
+                <span class="input-group-text" id="percentage">%</span>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label for="start_date">Discount start date</label>
