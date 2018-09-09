@@ -177,7 +177,7 @@ class IndexController extends Zend_Controller_Action
 
     public function musictableAction()
     {
-        $this->_helper->layout()->disableLayout();
+        $this->_helper->layout->disableLayout();
         $id = $this->_getParam('id', 0);
         $this->view->album = $id;
     }
@@ -286,6 +286,8 @@ class IndexController extends Zend_Controller_Action
 
     public function musicviewAction()
     {
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender(TRUE);
 
         $params = $_REQUEST;
 
@@ -301,16 +303,15 @@ class IndexController extends Zend_Controller_Action
 
         $search_keyword = $params['search']['value'];
 
-        $this->_helper->layout->disableLayout();
-        $this->_helper->viewRenderer->setNoRender(TRUE);
+
 
         $id = $this->_getParam('id', 0);
         $music = new Application_Model_DbTable_Music();
         $rows = $music->get_all_music($id,$search_keyword,$order_column,$dir,$start_page,$page_rows_length)->toArray();
-        $recordsTotal = $music->get_num_rows();
+        $recordsTotal = $music->get_num_rows($id);
         $recordsFiltered = $recordsTotal;
         if (!empty($params['search']['value'])) {
-            $recordsFiltered =  $music->get_music_searched($search_keyword);
+            $recordsFiltered =  $music->get_music_searched($id,$search_keyword);
         }
 
         $result = array(

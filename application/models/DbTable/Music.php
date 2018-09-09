@@ -84,10 +84,11 @@ class Application_Model_DbTable_Music extends Zend_Db_Table_Abstract
             $row->toArray();
     }
 
-    public function get_num_rows()
+    public function get_num_rows($id)
     {
         $select = $this->select();
-        $select->from($this, array('count(*) as amount'));
+        $select->from($this, array('count(*) as amount'))
+         ->where('album_id = '.$id);
         $rows = $this->fetchAll($select);
 
         return ($rows[0]->amount);
@@ -102,23 +103,25 @@ class Application_Model_DbTable_Music extends Zend_Db_Table_Abstract
             ->order($order_column . ' ' . $dir)
             ->where("title LIKE '%$keyword%' OR duration LIKE '%$keyword%' OR discount LIKE '%$keyword%'
             OR price_jod LIKE '%$keyword%' OR price_dollar LIKE '%$keyword%' OR price_euro LIKE '%$keyword%' OR
-            start_date LIKE '%$keyword%' OR end_date LIKE '%$keyword%' And id = '$id'")
+            start_date LIKE '%$keyword%' OR end_date LIKE '%$keyword%'")
+            ->where('album_id = '.$id)
             ->limit($length, $start);
         return $this->fetchAll($query);
     }
 
 
-    public function get_music_searched($keyword)
+    public function get_music_searched($id,$keyword)
     {
         $query =
             $this->select()
-                ->from($this, array('id'))
+                ->from($this, array('count(*) as amount'))
                 ->where("title LIKE '%$keyword%' OR duration LIKE '%$keyword%' OR discount LIKE '%$keyword%'
             OR price_jod LIKE '%$keyword%' OR price_dollar LIKE '%$keyword%' OR price_euro LIKE '%$keyword%' OR
-            start_date LIKE '%$keyword%' OR end_date LIKE '%$keyword%'");
-        $data = $this->fetchAll($query);
+            start_date LIKE '%$keyword%' OR end_date LIKE '%$keyword%'")
+                ->where('album_id = '.$id);
+        $rows = $this->fetchAll($query);
 
-        return count($data);
+        return ($rows[0]->amount);
     }
 
 }

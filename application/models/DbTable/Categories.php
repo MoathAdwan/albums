@@ -67,11 +67,11 @@ class Application_Model_DbTable_Categories extends Zend_Db_Table_Abstract
     {
         $query =
             $this->select()
-                ->from($this, array('id'))
+                ->from($this, array('count(*) as amount'))
                 ->where("name LIKE '%$keyword%' ");
-        $data = $this->fetchAll($query);
+        $rows = $this->fetchAll($query);
 
-        return count($data);
+        return $rows[0]->amount;
     }
 }
 
