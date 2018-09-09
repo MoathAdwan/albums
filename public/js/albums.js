@@ -440,7 +440,16 @@ $(document).ready(function () {
 
                 {"data": "title"},
                 {"data": "artist"},
-                {"data": "categories"},
+                {"data": "categories",
+                    render: function (data, type, row) {
+                        var categories = data.split(',');
+                        var album_tags = "<h5>";
+                        for (var count=0;count < categories.length;count++ ){
+                            album_tags+=' '+'<span class="badge badge-secondary">'+categories[count]+'</span>';
+                        }
+                        return album_tags+"</h5>";
+                    }
+                },
                 {
 
                     render: function (data, type, row) {
@@ -662,7 +671,7 @@ $(document).ready(function () {
 
     //use this to reload specific table
     function reloadTable(table) {
-        table.ajax.reload();
+        table.ajax.reload( null, false );
     }
 
 

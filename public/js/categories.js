@@ -183,8 +183,7 @@ $(document).ready(function () {
     }
 
     function reloadTable(table) {
-
-        table.ajax.reload();
+        table.ajax.reload(null,false);
     }
 
 
