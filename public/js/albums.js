@@ -456,9 +456,9 @@ $(document).ready(function () {
 
                         return ' <button class="btn btn-danger delete-album-btn" data-name="Delete" data-id="' + row.id + '" data-title="' + row.title + '" ' +
                             'data-artist="' + row.artist + '"><i class="fas fa-trash-alt"></i></button>' +
-                            '<button class="btn btn-warning  edit-album-btn" data-name="Edit" data-id="' + row.id + '" data-title="' + row.title + '" ' +
+                            ' <button class="btn btn-warning  edit-album-btn" data-name="Edit" data-id="' + row.id + '" data-title="' + row.title + '" ' +
                             'data-artist="' + row.artist + '"><i class="fas fa-edit"></i></button>' +
-                            '<button class="btn btn-success  view-album-btn" data-name="View" data-id="' + row.id + '" data-title="' + row.title + '" ' +
+                            ' <button class="btn btn-success  view-album-btn" data-name="View" data-id="' + row.id + '" data-title="' + row.title + '" ' +
                             'data-artist="' + row.artist + '"><i class="fas fa-eye"></i></button>';
                     }
                 }
@@ -658,7 +658,7 @@ $(document).ready(function () {
 
                         return ' <button class="btn btn-danger  delete-music-btn" data-name="Delete" data-id="' + row.id + '" data-title="' + row.title + '" ' +
                             'data-duration="' + row.duration + '"><i class="fas fa-trash-alt"></i></button>' +
-                            '<button class="btn btn-warning  edit-music-btn" data-name="Edit" data-id="' + row.id + '" data-title="' + row.title + '" ' +
+                            ' <button class="btn btn-warning  edit-music-btn" data-name="Edit" data-id="' + row.id + '" data-title="' + row.title + '" ' +
                             'data-duration="' + row.duration + '"><i class="fas fa-edit"></i></button>';
 
                     }

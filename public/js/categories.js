@@ -170,7 +170,7 @@ $(document).ready(function () {
 
                         return ' <button class="btn btn-danger  delete-category-btn" data-action="Delete" data-id="' + row.id + '" data-name="' + row.name + '" ' +
                             '"><i class="fas fa-trash-alt"></i></button>' +
-                            '<button class="btn btn-warning  edit-category-btn" data-action="Edit" data-id="' + row.id + '" data-name="' + row.name + '" ' +
+                            ' <button class="btn btn-warning  edit-category-btn" data-action="Edit" data-id="' + row.id + '" data-name="' + row.name + '" ' +
                             '"><i class="fas fa-edit"></i></button>';
 
                     }
